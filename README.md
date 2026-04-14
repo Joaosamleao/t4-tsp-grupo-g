@@ -48,7 +48,6 @@ Instancia TSP carregada:
 - numero de pontos: 13509
 
 Nearest insertion: tamanho = 13509, comprimento = 77449.9794
-
 ````
 
 ### 2. Smallest Insertion
