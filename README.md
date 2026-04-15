@@ -51,6 +51,14 @@ Nearest insertion: tamanho = 13509, comprimento = 77449.9794
 ````
 
 ### 2. Smallest Insertion
+````
+java -cp Main dados/usa13509.txt
+Instancia TSP carregada:
+- dimensoes: 1000x600
+- numero de pontos: 13509
+
+Smallest insertion: tamanho = 13509, comprimento = 45074.7769
+````
 
 ## Vídeo Explicativo
 https://drive.google.com/file/d/1ptr_wIQ5FCPhCs-PaSBOH4XWRDvyIQfC/view?usp=drivesdk
