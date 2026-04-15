@@ -53,3 +53,4 @@ Nearest insertion: tamanho = 13509, comprimento = 77449.9794
 ### 2. Smallest Insertion
 
 ## Vídeo Explicativo
+https://drive.google.com/file/d/1ptr_wIQ5FCPhCs-PaSBOH4XWRDvyIQfC/view?usp=drivesdk
