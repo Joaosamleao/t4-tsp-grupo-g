@@ -130,7 +130,40 @@ public class Tour {
 
     // inserts p using the smallest increase heuristic
     public void insertSmallest(Point p) {
-        return;
+        if (start.p == null) {
+            start.p = p;
+            start.next = start;
+            return;
+        }
+
+        Node current = start;
+        Node bestNode = start;
+
+        double minIncrease = Double.MAX_VALUE;
+
+        do {
+            Node nextNode = current.next;
+
+            double increase =
+                    current.p.distanceTo(p)
+                            + p.distanceTo(nextNode.p)
+                            - current.p.distanceTo(nextNode.p);
+
+            if (increase < minIncrease) {
+                minIncrease = increase;
+                bestNode = current;
+            }
+
+            current = current.next;
+        } while (!current.equals(start));
+
+
+        Node newNode = new Node();
+        newNode.p = p;
+
+
+        newNode.next = bestNode.next;
+        bestNode.next = newNode;
     }
 
     // tests this class by calling all constructors and instance methods
